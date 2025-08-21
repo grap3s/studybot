@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StudyBot GPT</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('images/home.jpg') no-repeat center center fixed;
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    .center-title {
+      text-align: center;
+      font-size: 40px;
+      margin-top: 30px;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .chat-container {
+      margin: 20px auto; /* moved further up */
+      width: 60%;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .chat-messages {
+      height: 400px; /* taller output */
+      overflow-y: auto;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: white;
+    }
+
+    .chat-messages div {
+      margin-bottom: 12px; /* space between messages */
+    }
+
+    .user-message {
+      padding: 6px 10px;
+      background-color: #e8e8ff;
+      border-radius: 8px;
+    }
+
+    .bot-message {
+      padding: 6px 10px;
+      background-color: #f0fff0;
+      border-radius: 8px;
+      margin-top: 4px;
+    }
+
+    .chat-input {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .back-button {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background-color: #4d205b;
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+  </style>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1 class="center-title">StudyBot GPT</h1>
+
+  <div class="chat-container">
+    <div class="chat-messages" id="chatMessages"></div>
+    <input id="chatInput" class="chat-input" placeholder="Ask something...">
+  </div>
+
+  <a href="index.html" class="back-button">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .center-title {
+      text-align: center;
+      font-size: 40px;
+      margin-top: 20px;
+    }
+
+    .about-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      box-sizing: border-box;
+      height: calc(100% - 100px);
+    }
+
+    .about-text {
+      width: 65%;
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: pre-line;
+    }
+
+    .about-images {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .about-images img {
+      max-width: 120px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .back-button {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background-color: #4d205b;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="center-title">About Us</h1>
+  <div class="about-container">
+    <p class="about-text">
+We’re three students — Ethan, Oscar, and Will — who came together to create StudyBot GPT because we’re passionate about learning, school, and the future of AI.
+
+We know how hard it can be to keep up with schoolwork, stay motivated, and find reliable help when you need it. That’s why we built a tool that makes studying easier, faster, and more personalised for everyone.
+
+Our goal is to help students, teachers, and lifelong learners get the support they need with smart, simple, and powerful AI. Whether it’s helping with assignments, explaining tricky concepts, or saving time with quick answers, StudyBot GPT is designed to make education more accessible and enjoyable.
+
+We’re always working on ways to improve it and make it even more useful. This is just the beginning — and we’re excited to keep building something that makes a real difference in how people learn and grow.
+    </p>
+    <div class="about-images">
+      <img src="images/Oscar.jpg" alt="Oscar">
+      <img src="images/Will.jpg" alt="Will">
+      <img src="images/Ethan.jpg" alt="Ethan">
+    </div>
+  </div>
+<a href="index.html" class="back-button">Back to Home</a>
+</body>
+</html>
