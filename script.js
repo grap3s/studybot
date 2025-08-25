@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
 
           // Redirect conditions
-          else if (lowerInput.includes("maths") && lowerInput.includes("flashcards")) {
+        else if (lowerInput.includes("flashcards")) {
             botMsg.textContent = "StudyBot: Redirecting to flashcards...";
             messages.appendChild(userMsg);
             messages.appendChild(botMsg);
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
               window.location.href = "flashcards.html";
             }, 1500);
             return;
-          } else if (lowerInput.includes("science") && lowerInput.includes("quiz")) {
+         } else if (lowerInput.includes("quiz")) {
             botMsg.textContent = "StudyBot: Redirecting to quiz...";
             messages.appendChild(userMsg);
             messages.appendChild(botMsg);
@@ -114,3 +114,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
