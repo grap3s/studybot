@@ -110,20 +110,30 @@ footer a {
 }
 
 .chat-messages {
-  height: 200px;
+  height: 400px; /* was 200px — now double the height */
   overflow-y: auto;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 10px;
+  background-color: white;
 }
 
-.chat-input {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 20px;
-  border: 1px solid #ccc;
+.chat-messages div {
+  margin-bottom: 12px; /* spacing between each message */
+}
+
+.user-message {
+  padding: 6px 10px;
+  background-color: #e8e8ff;
+  border-radius: 8px;
+}
+
+.bot-message {
+  padding: 6px 10px;
+  background-color: #f0fff0;
+  border-radius: 8px;
+  margin-top: 4px;
 }
 
 .side-links {
@@ -155,30 +165,90 @@ html, body {
   overflow: hidden;
 }
 
-.chat-messages {
-  height: 400px; /* was 200px — now double the height */
-  overflow-y: auto;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: white;
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .try-button {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+
+  .chat-container {
+    width: 80%;
+  }
 }
 
-.chat-messages div {
-  margin-bottom: 12px; /* spacing between each message */
+@media (max-width: 768px) {
+  .overlay {
+    padding-top: 60px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .try-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    bottom: 10px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-text,
+  .about-images {
+    width: 100%;
+  }
+
+  .chat-container {
+    width: 90%;
+    margin: 40px auto;
+  }
 }
 
-.user-message {
-  padding: 6px 10px;
-  background-color: #e8e8ff;
-  border-radius: 8px;
-}
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
 
-.bot-message {
-  padding: 6px 10px;
-  background-color: #f0fff0;
-  border-radius: 8px;
-  margin-top: 4px;
-}
+  .try-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 
+  footer a {
+    font-size: 14px;
+  }
+
+  .center-title {
+    font-size: 24px;
+  }
+
+  .center-text {
+    font-size: 16px;
+  }
+
+  .side-links {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .side-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
